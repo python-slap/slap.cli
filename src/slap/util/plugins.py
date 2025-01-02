@@ -1,4 +1,4 @@
-""" Helpers to implement a plugin infrastructure in Python. """
+"""Helpers to implement a plugin infrastructure in Python."""
 
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
-""" With the application object we manage the CLI commands and other types of plugins as well as access to the Slap
-user and project configuration. """
+"""With the application object we manage the CLI commands and other types of plugins as well as access to the Slap
+user and project configuration."""
 
 from __future__ import annotations
 

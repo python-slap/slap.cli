@@ -1,4 +1,4 @@
-""" Commands that produce reports. """
+"""Commands that produce reports."""
 
 import json
 import logging

@@ -1,4 +1,4 @@
-""" Implements the default package detection plugin. """
+"""Implements the default package detection plugin."""
 
 from __future__ import annotations
 

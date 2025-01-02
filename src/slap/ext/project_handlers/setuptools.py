@@ -1,4 +1,4 @@
-""" Project handler for projects using the Setuptools build system. """
+"""Project handler for projects using the Setuptools build system."""
 
 from __future__ import annotations
 

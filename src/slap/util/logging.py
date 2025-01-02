@@ -1,4 +1,4 @@
-""" Provides a logging formatter that understands color hints in the message and decorates it with """
+"""Provides a logging formatter that understands color hints in the message and decorates it with"""
 
 from __future__ import annotations
 
