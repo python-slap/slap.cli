@@ -35,7 +35,7 @@ dependencies = [
 description = "Slap is a command-line utility for developing Python applications."
 license = {text = "MIT"}
 name = "slap-cli"
-requires-python = "<3.13,>=3.10"
+requires-python = "<4,>=3.10"
 version = "1.14.2"
 
 [project.urls]
