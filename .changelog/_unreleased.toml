@@ -1,4 +1,10 @@
 [[entries]]
+id = "e04c9886-b841-4ee8-b823-05d1e8dc2b37"
+type = "improvement"
+description = "Honor `TWINE_USERNAME` and `TWINE_PASSWORD` environment variables"
+author = "@ndejong"
+
+[[entries]]
 id = "95676706-7b7b-40f3-99ac-b7149e2f81b5"
 type = "feature"
 description = "Add basic support for `pyproject.toml` that uses Uv to prevent it causing errors"
