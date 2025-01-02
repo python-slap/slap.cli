@@ -1,0 +1,5 @@
+[[entries]]
+id = "95676706-7b7b-40f3-99ac-b7149e2f81b5"
+type = "feature"
+description = "Add basic support for `pyproject.toml` that uses Uv to prevent it causing errors"
+author = "@NiklasRosenstein"

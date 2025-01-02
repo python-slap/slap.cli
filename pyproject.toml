@@ -85,6 +85,7 @@ prerelease = "slap.ext.version_incrementing_rule:prerelease"
 flit = "slap.ext.project_handlers.flit:FlitProjectHandler"
 poetry = "slap.ext.project_handlers.poetry:PoetryProjectHandler"
 setuptools = "slap.ext.project_handlers.setuptools:SetuptoolsProjectHandler"
+uv = "slap.ext.project_handlers.uv:UvProjectHandler"
 
 [project.entry-points."slap.plugins.repository"]
 default = "slap.ext.repository_handlers.default:DefaultRepositoryHandler"

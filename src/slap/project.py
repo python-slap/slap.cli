@@ -133,7 +133,15 @@ class Project(Configuration):
 
         if not self.is_python_project:
             return []
-        packages = self.handler().get_packages(self)
+        try:
+            packages = self.handler().get_packages(self)
+        except NotImplementedError:
+            logger.warning(
+                "Project handler <obj>%s</obj> does not support package detection for project <subj>%s</subj>",
+                self.handler(),
+                self,
+            )
+            packages = []
         if packages:
             logger.debug(
                 "Detected packages for project <subj>%s</subj> by package detector <obj>%s</obj>: <val>%s></val>",
