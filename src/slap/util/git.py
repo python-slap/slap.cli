@@ -359,7 +359,6 @@ class Git:
         contains: bool = False,
         commitish: t.Optional[str] = None,
     ) -> t.Optional[str]:
-
         command = ["git", "describe"]
         if all:
             command.append("--all")

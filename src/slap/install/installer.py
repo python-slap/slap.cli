@@ -1,4 +1,4 @@
-""" Provides an installer for dependencies. """
+"""Provides an installer for dependencies."""
 
 from __future__ import annotations
 
