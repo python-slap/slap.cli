@@ -107,9 +107,8 @@ ruff-format = "ruff format --check"
 ruff-lint = "ruff check"
 
 [tool.slap.run]
-"docs:build" = "slap run --use-venv docs -- bash -xc 'export PATH=\"$(slap venv -p)/bin:${PATH}\" && cd docs && mksync -i docs/changelog.md && mkdocs build'"
-"docs:dev" = "slap run --use-venv docs -- bash -xc 'export PATH=\"$(slap venv -p)/bin:${PATH}\" && cd docs && mksync -i docs/changelog.md && mkdocs serve'"
-"docs:install" = "slap venv -c docs --python python3.10 && slap run --use-venv docs -- pip install -r docs/requirements.txt"
+"docs:build" = "cd docs && uv run -- bash -xc 'mksync -i docs/changelog.md && mkdocs build'"
+"docs:dev" = "cd docs && uv run -- bash -xc 'mksync -i docs/changelog.md && mkdocs serve'"
 fmt = "ruff format ."
 
 [tool.mypy]
