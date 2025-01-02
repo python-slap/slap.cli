@@ -1,4 +1,4 @@
-""" Represents a mutable TOML configuration file in memory. """
+"""Represents a mutable TOML configuration file in memory."""
 
 import typing as t
 from pathlib import Path

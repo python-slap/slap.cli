@@ -9,7 +9,7 @@ description = ""
 authors = ["{author_name} <{author_email}>"]
 license = "{license}"
 readme = "README.md"
-packages = [{{ include = "{path}", from = "src" }}]
+packages = [{ include = "{path}", from = "src" }]
 classifiers = []
 keywords = []
 

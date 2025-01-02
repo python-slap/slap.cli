@@ -1,4 +1,4 @@
-""" Tools for URL handling. """
+"""Tools for URL handling."""
 
 from __future__ import annotations
 

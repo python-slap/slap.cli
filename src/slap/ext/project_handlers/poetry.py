@@ -1,4 +1,4 @@
-""" Project handler for projects using the Poetry build system. """
+"""Project handler for projects using the Poetry build system."""
 
 from __future__ import annotations
 
