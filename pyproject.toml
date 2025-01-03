@@ -36,7 +36,7 @@ description = "Slap is a command-line utility for developing Python applications
 license = {text = "MIT"}
 name = "slap-cli"
 requires-python = "<4,>=3.10"
-version = "1.14.2"
+version = "1.15.0"
 
 [project.urls]
 Documentation = "https://niklasrosenstein.github.io/slap/"
