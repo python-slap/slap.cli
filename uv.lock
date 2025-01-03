@@ -873,7 +873,7 @@ wheels = [
 
 [[package]]
 name = "slap-cli"
-version = "1.14.2"
+version = "1.15.0"
 source = { editable = "." }
 dependencies = [
     { name = "beautifulsoup4" },
@@ -928,7 +928,7 @@ requires-dist = [
     { name = "tomli", specifier = ">=2.0.0,<3.0.0" },
     { name = "tomlkit", specifier = ">=0.12.1,<1.0.0" },
     { name = "tqdm", specifier = ">=4.64.0,<5.0.0" },
-    { name = "twine", specifier = ">=5.0.0,<6.0.0" },
+    { name = "twine", specifier = ">=6.0.1,<6.0.2" },
     { name = "uv", specifier = ">=0.2.0,<1.0.0" },
 ]
 
@@ -1024,7 +1024,7 @@ name = "tqdm"
 version = "4.67.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "colorama", marker = "platform_system == 'Windows'" },
+    { name = "colorama", marker = "sys_platform == 'win32'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/a8/4b/29b4ef32e036bb34e4ab51796dd745cdba7ed47ad142a9f4a1eb8e0c744d/tqdm-4.67.1.tar.gz", hash = "sha256:f8aef9c52c08c13a65f30ea34f4e5aac3fd1a34959879d7e59e63027286627f2", size = 169737 }
 wheels = [
@@ -1033,11 +1033,11 @@ wheels = [
 
 [[package]]
 name = "twine"
-version = "5.1.1"
+version = "6.0.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "importlib-metadata" },
-    { name = "keyring" },
+    { name = "keyring", marker = "platform_machine != 'ppc64le' and platform_machine != 's390x'" },
+    { name = "packaging" },
     { name = "pkginfo" },
     { name = "readme-renderer" },
     { name = "requests" },
@@ -1046,9 +1046,9 @@ dependencies = [
     { name = "rich" },
     { name = "urllib3" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/77/68/bd982e5e949ef8334e6f7dcf76ae40922a8750aa2e347291ae1477a4782b/twine-5.1.1.tar.gz", hash = "sha256:9aa0825139c02b3434d913545c7b847a21c835e11597f5255842d457da2322db", size = 225531 }
+sdist = { url = "https://files.pythonhosted.org/packages/2c/33/88b80116504b61759fa2db05e13f2296b0d2e73568f5e731d020c13843b8/twine-6.0.1.tar.gz", hash = "sha256:36158b09df5406e1c9c1fb8edb24fc2be387709443e7376689b938531582ee27", size = 227175 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/5d/ec/00f9d5fd040ae29867355e559a94e9a8429225a0284a3f5f091a3878bfc0/twine-5.1.1-py3-none-any.whl", hash = "sha256:215dbe7b4b94c2c50a7315c0275d2258399280fbb7d04182c7e55e24b5f93997", size = 38650 },
+    { url = "https://files.pythonhosted.org/packages/21/df/dda5f85131ecc0d31e10f6dc6be98440ef9f685947917b86f462eed6864b/twine-6.0.1-py3-none-any.whl", hash = "sha256:9c6025b203b51521d53e200f4a08b116dee7500a38591668c6a6033117bdc218", size = 39398 },
 ]
 
 [[package]]
