@@ -1,4 +1,5 @@
 version = 1
+revision = 1
 requires-python = ">=3.10, <4"
 
 [[package]]
@@ -573,11 +574,11 @@ wheels = [
 
 [[package]]
 name = "poetry-core"
-version = "1.9.1"
+version = "2.1.0"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/c7/5c/3609519b7d890ced542fe327ea26a7c8ea55ef298c323c46cca2a011c1cb/poetry_core-1.9.1.tar.gz", hash = "sha256:7a2d49214bf58b4f17f99d6891d947a9836c9899a67a5069f52d7b67217f61b8", size = 337193 }
+sdist = { url = "https://files.pythonhosted.org/packages/38/bf/426857756fd5bf44d80cd3a33d5a6de135e46715dfa171e34ad25d652a40/poetry_core-2.1.0.tar.gz", hash = "sha256:ceea605d31dbae232eee53f81489e4c1de203fc00e7f7e25fd095c8629e5feec", size = 362182 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/f7/b4/ae500aaba6e003ff80889e3dee449b154d2dd70d520dc0402f23535a5995/poetry_core-1.9.1-py3-none-any.whl", hash = "sha256:6f45dd3598e0de8d9b0367360253d4c5d4d0110c8f5c71120a14f0e0f116c1a0", size = 309472 },
+    { url = "https://files.pythonhosted.org/packages/8a/b6/989fc44d8fbbec2f280d9ad0dc1fd27b3c3e35397f639b5b7d20dd01b52c/poetry_core-2.1.0-py3-none-any.whl", hash = "sha256:021965ce3e951a705976821e8419fc950d04459c5b7a3f8e315bc74b715efe6f", size = 331172 },
 ]
 
 [[package]]
@@ -873,7 +874,7 @@ wheels = [
 
 [[package]]
 name = "slap-cli"
-version = "1.14.2"
+version = "1.15.0"
 source = { editable = "." }
 dependencies = [
     { name = "beautifulsoup4" },
@@ -919,7 +920,7 @@ requires-dist = [
     { name = "gitpython", specifier = ">=3.1.31,<4.0.0" },
     { name = "nr-python-environment", specifier = ">=0.1.4,<1.0.0" },
     { name = "nr-stream", specifier = ">=1.1.5,<2.0.0" },
-    { name = "poetry-core", specifier = ">=1.9,<1.10" },
+    { name = "poetry-core", specifier = ">=2.1,<2.2" },
     { name = "ptyprocess", specifier = ">=0.7.0,<1.0.0" },
     { name = "pygments", specifier = ">=2.11.2,<3.0.0" },
     { name = "pyyaml", specifier = ">=6.0" },
@@ -1024,7 +1025,7 @@ name = "tqdm"
 version = "4.67.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "colorama", marker = "platform_system == 'Windows'" },
+    { name = "colorama", marker = "sys_platform == 'win32'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/a8/4b/29b4ef32e036bb34e4ab51796dd745cdba7ed47ad142a9f4a1eb8e0c744d/tqdm-4.67.1.tar.gz", hash = "sha256:f8aef9c52c08c13a65f30ea34f4e5aac3fd1a34959879d7e59e63027286627f2", size = 169737 }
 wheels = [
